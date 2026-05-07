@@ -41,7 +41,7 @@ export default function Login() {
   const login = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://community-page-mern.vercel.app/api/auth/login",
         form
       );
 
