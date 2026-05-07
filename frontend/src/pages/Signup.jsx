@@ -38,7 +38,7 @@ export default function Signup() {
   // 🔐 Signup
   const signup = async () => {
     try {
-      await axios.post("http://localhost:5000/api/auth/signup", form);
+      await axios.post("https://community-page-mern.vercel.app/api/auth/signup", form);
       nav("/login");
     } catch (err) {
       alert("Signup failed");
