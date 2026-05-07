@@ -4,7 +4,7 @@ import io from "socket.io-client";
 import { AuthContext } from "../context/AuthContext";
 import DashboardLayout from "../components/DashboardLayout";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://community-page-mern.vercel.app");
 
 export default function Chat() {
   const { room } = useParams();
